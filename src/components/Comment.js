@@ -143,12 +143,12 @@ const Comment = ({
         <div className="c-controls">
           {commentData.username === "juliusomo" && (
           <>
-          <a href="/#" onClick={showDeleteModal} className="reply"><img src="images/icon-delete.svg" alt="" className="control-icon" />Delete</a>
-          <a href="/#" onClick={showEditComment} className="reply"><img src="images/icon-edit.svg" alt="" className="control-icon" />Edit</a>
+          <a onClick={showDeleteModal} className="reply"><img src="images/icon-delete.svg" alt="" className="control-icon" />Delete</a>
+          <a onClick={showEditComment} className="reply"><img src="images/icon-edit.svg" alt="" className="control-icon" />Edit</a>
           </>
           )}
           {commentData.username !== "juliusomo" && (
-          <a href="/#" onClick={showAddComment} className="reply"><img src="images/icon-reply.svg" alt="" className="control-icon" />Reply</a>
+          <a onClick={showAddComment} className="reply"><img src="images/icon-reply.svg" alt="" className="control-icon" />Reply</a>
           )}
         </div>
         <div className="c-user">
